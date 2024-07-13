@@ -1,8 +1,8 @@
-import React from 'react'; // React를 가져옴
-import MovieSelection from './MovieSelection'; // MovieSelection 컴포넌트를 가져옴
-import DateSelection from './DateSelection'; // DateSelection 컴포넌트를 가져옴
-import TimeSelection from './TimeSelection'; // TimeSelection 컴포넌트를 가져옴
-import '../Ticket/Ticket.css'; // 스타일(디자인) 파일을 가져옴
+import React, { useState } from 'react';
+import MovieSelection from './MovieSelection';
+import DateSelection from './DateSelection';
+import TimeSelection from './TimeSelection';
+import '../Ticket/Ticket.css';
 import Subbanner from '../../components/Subbanner';
 
 const QuickBooking = ({ movie, setSelectedMovie, setSelectedDate, setSelectedTime, selectedMovie, selectedDate, selectedTime }) => {
@@ -21,10 +21,12 @@ const QuickBooking = ({ movie, setSelectedMovie, setSelectedDate, setSelectedTim
           onSelect={setSelectedDate} // 선택한 날짜를 설정하는 함수를 전달
           selectedDate={selectedDate} // 선택한 날짜를 전달
         />
-        <TimeSelection
-          onSelect={setSelectedTime} // 선택한 시간을 설정하는 함수를 전달
-          selectedTime={selectedTime} // 선택한 시간을 전달
-        />
+        {selectedMovie && selectedDate && (
+          <TimeSelection
+            onSelect={setSelectedTime} // 선택한 시간을 설정하는 함수를 전달
+            selectedTime={selectedTime} // 선택한 시간을 전달
+          />
+        )}
       </div>
     </div>
   );

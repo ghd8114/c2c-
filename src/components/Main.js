@@ -6,12 +6,12 @@ import image8 from '../assets/Maskgroup.png';
 import image9 from '../assets/free-icon-question-5668097(1).png';
 import image10 from '../assets/free-icon-customer-service-10041643(1).png';
 import image11 from '../assets/free-icon-map-3969582(1).png';
-import Sliderwrap from './Sliderwrap.js';
+// import Sliderwrap from './Sliderwrap.js';
 
 const Main = () => { 
   return (
     <main class="main">
-  <Sliderwrap/>
+  {/* <Sliderwrap/> */}
 
     <section id="reserve" class="reserve">
       <div className="text_box_title">

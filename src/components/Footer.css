@@ -1,97 +1,55 @@
 footer {
-    position: relative;
-    transform: translateY(0%);
-    display: flex;
+    position: fixed;
     bottom: 0;
     width: 100%;
     background-color: #fffaea;
     height: 254px;
-    margin-top: 84px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .footer_c2c img {
-    padding-top: 87px;
-    position: absolute;
+    padding-top: 20px;
+}
+
+.team_name p, .copy_rights p, .privacy p {
+    font-size: 14px;
+    color: #333333;
+    margin: 0;
 }
 
 .team_name p {
-    font-size: 14px;
-    color: #333333;
-    padding-left: 187px;
-    padding-top: 90px;
-    position: absolute;
+    margin-top: 10px;
 }
 
 .privacy p {
-    font-size: 14px;
-    color: #333333;
-    padding-left: 1075px;
-    padding-top: 20px;
-    position: absolute;
-}
-
-.facebook_icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #ffb800;
-    position: relative;
-    display: flex;
-    
-}
-
-.facebook_icon img {
-    position: absolute;
-    padding-left: 7px;
-    padding-top: 6px;
-}
-
-.insta_icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #ffb800;
-    position: relative;
-    display: flex;
-    margin-left: 9px;
-
-}
-
-.insta_icon img {
-    position: absolute;
-    padding-left: 7px;
-    padding-top: 6px;
-}
-
-.youtube_icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #ffb800;
-    position: relative;
-    display: flex;
-    margin-left: 9px;
-}
-
-.youtube_icon img {
-    position: absolute;
-    padding-left: 8px;
-    padding-top: 6px;
+    margin-top: 20px;
 }
 
 .sns_icon {
     display: flex;
-    right: 0;
-    position: relative;
-    float: right;
-    padding-top: 184px;
-    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.sns_icon div {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ffb800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.sns_icon img {
+    width: 24px;
+    height: 24px;
 }
 
 .copy_rights p {
-    font-size: 14px;
-    color: #333333;
-    padding-left: 12px;
-    padding-top: 200px;
-    position: absolute;
+    margin-top: 20px;
 }
